@@ -1,0 +1,125 @@
+body {
+    background-color: #76c085;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.instruction {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#addButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3182ce;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+#addButton:hover {
+    background-color: #2b6cb0;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#taskList li {
+    background-color: #e2e8f0;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+#taskList li:hover {
+    background-color: #cbd5e0;
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #f0f0f0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#clearCompletedButton {
+    background-color: #3182ce;
+}
+
+#clearCompletedButton:hover {
+    background-color: #2b6cb0;
+}
+
+#emptyListButton {
+    background-color: #e53e3e;
+}
+
+#emptyListButton:hover {
+    background-color: #c53030;
+}
+
+#saveListButton {
+    background-color: #38a169;
+}
+
+#saveListButton:hover {
+    background-color: #2f855a;
+}
